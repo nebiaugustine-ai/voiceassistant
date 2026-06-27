@@ -12,7 +12,7 @@ router = APIRouter()
 
 @router.get("/voice_assistant")
 def voice_assistant(chat_input: str):
-    # Initializes the Gemini Client
+    
     client = genai.Client()
     
     system_prompt = """
